@@ -6,3 +6,23 @@
 04 Okt 2010 01:51:27,633 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
 04 Okt 2010 01:51:34,341 INFO  ~ Connected to jdbc:hsqldb:mem:playembed
 04 Okt 2010 01:51:35,035 INFO  ~ Application 'qa' is now started !
+04 Okt 2010 02:12:03,421 ERROR ~ 
+
+@643b8mek5
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models/Question.java around line 20)
+The file /app/models/Question.java could not be compiled. Error raised is : Duplicate method Question(User, String, String) in type Question
+
+play.exceptions.JavaCompilationException: Duplicate method Question(User, String, String) in type Question
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+04 Okt 2010 02:58:04,607 WARN  ~ SQL Error: -28, SQLState: S0022
+04 Okt 2010 02:58:04,608 ERROR ~ Column not found: QUESTIONEDAT in statement [select top ? question0_.id as id32_, question0_.author_id as author5_32_, question0_.content as content32_, question0_.postedAt as postedAt32_, question0_.title as title32_ from Question question0_ order by questionedAt desc]
