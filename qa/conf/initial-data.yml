@@ -1,0 +1,58 @@
+# Test data
+
+User(bob):
+    email:          bob@gmail.com
+    password:       secret
+    fullname:       Bob
+    isAdmin:        true
+    
+User(jeff):
+    email:          jeff@gmail.com
+    password:       secret
+    fullname:       Jeff    
+    
+Question(firstBobQuestion):
+    title:          About the model layer
+    postedAt:       2009-06-14
+    author:         bob
+    content:        >
+                    Has the model has a central position in a Play! application?
+
+Question(secondBobQuestion):
+    title:          Just a test
+    postedAt:       2009-03-25
+    author:         bob
+    content:        >
+                    I don't have a question...
+                    
+Question(jeffQuestion):
+    title:          The MVC application
+    postedAt:       2009-06-06
+    author:         jeff
+    content:        >
+                    A Play! application follows the MVC architectural pattern as applied to the 
+                    architecture of the Web.
+                    This pattern splits the application into separate layers, but I don't know which ones.
+                    Can Anybody help me?
+                    
+Answer(a1):
+    author:         Guest
+    content:        >
+                    Yes.
+    postedAt:       2009-06-14
+    question:       firstBobQuestion
+    
+Answer(a2):
+    author:         Mike
+    content:        >
+                    I know it :P
+    postedAt:       2009-06-15
+    question:       firstBobQuestion    
+    
+Answer(a3):
+    author:         Tom
+    content:        >
+                    This question is nonsense!
+    postedAt:       2009-04-05
+    question:       secondBobQuestion    
+                 

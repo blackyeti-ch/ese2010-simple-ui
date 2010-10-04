@@ -34,5 +34,13 @@ public class Question extends Model {
         this.save();
         return this;
     }
+    
+    public Question previous() {
+        return Question.find("postedAt < ? order by postedAt desc", postedAt).first();
+    }
+     
+    public Question next() {
+        return Question.find("postedAt > ? order by postedAt asc", postedAt).first();
+    }
 
 }

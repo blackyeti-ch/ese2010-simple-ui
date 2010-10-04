@@ -1,4 +1,26 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
-
-<h1>Incomes the second ESE Task</h1>
+ 
+#{if frontQuestion}
+    <h3>Recently asked<span class="from"></span></h3>
+    #{display question:frontQuestion, as:'home' /}
+    
+    #{if olderQuestions.size()}
+    
+        <div class="older-questions">
+            <h3>Older questions <span class="from"></span></h3>
+        
+            #{list items:olderQuestions, as:'oldQuestion'}
+                #{display question:oldQuestion, as:'teaser' /}
+            #{/list}
+        </div>
+        
+    #{/if}
+    
+#{/if}
+ 
+#{else}
+    <div class="empty">
+        There is currently nothing to read here.
+    </div>
+#{/else}
