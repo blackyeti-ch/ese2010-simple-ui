@@ -7,6 +7,7 @@
     <div class="question-metadata">
         <span class="question-author">by ${_question.author.fullname}</span>,
         <span class="question-date">${_question.postedAt.format('dd MMM yy')}</span>
+        <span class="rating"></span>
         #{if _as != 'full'}
             <span class="question-answers">
                 &nbsp;|&nbsp; ${_question.answers.size() ?: 'no'} 
@@ -39,6 +40,7 @@
                     <span class="answer-date">
                         ${answer.postedAt.format('dd MMM yy')}
                     </span>
+                    <span class="rating"></span>
                 </div>
                 <div class="answer-content">
                     <div class="about">Detail: </div>

@@ -1,10 +1,540 @@
-05 Okt 2010 02:19:43,562 INFO  ~ Starting G:\EHD Save 08-01-10\UniBe\Informatik\Einführung Software Engineering\Übungen\Lösungen\play-1.0.3.2\qa
-05 Okt 2010 02:19:43,565 INFO  ~ Module secure is available (G:\EHD Save 08-01-10\UniBe\Informatik\Einführung Software Engineering\Übungen\Lösungen\play-1.0.3.2\modules\secure)
-05 Okt 2010 02:19:43,566 INFO  ~ Module crud is available (G:\EHD Save 08-01-10\UniBe\Informatik\Einführung Software Engineering\Übungen\Lösungen\play-1.0.3.2\modules\crud)
-05 Okt 2010 02:19:44,088 INFO  ~ 
-05 Okt 2010 02:19:44,088 INFO  ~ Go to http://localhost:9000/@tests to run the tests
-05 Okt 2010 02:19:44,088 INFO  ~ 
-05 Okt 2010 02:19:44,088 WARN  ~ You're running Play! in DEV mode
-05 Okt 2010 02:19:44,179 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-05 Okt 2010 02:19:47,876 INFO  ~ Connected to jdbc:hsqldb:mem:playembed
-05 Okt 2010 02:19:48,602 INFO  ~ Application 'qa' is now started !
+05 Okt 2010 16:57:21,910 INFO  ~ Starting G:\EHD Save 08-01-10\UniBe\Informatik\Einführung Software Engineering\Übungen\Lösungen\play-1.0.3.2\qa
+05 Okt 2010 16:57:21,913 INFO  ~ Module secure is available (G:\EHD Save 08-01-10\UniBe\Informatik\Einführung Software Engineering\Übungen\Lösungen\play-1.0.3.2\modules\secure)
+05 Okt 2010 16:57:21,913 INFO  ~ Module crud is available (G:\EHD Save 08-01-10\UniBe\Informatik\Einführung Software Engineering\Übungen\Lösungen\play-1.0.3.2\modules\crud)
+05 Okt 2010 16:57:22,453 INFO  ~ 
+05 Okt 2010 16:57:22,454 INFO  ~ Go to http://localhost:9000/@tests to run the tests
+05 Okt 2010 16:57:22,454 INFO  ~ 
+05 Okt 2010 16:57:22,455 WARN  ~ You're running Play! in DEV mode
+05 Okt 2010 16:57:22,549 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+05 Okt 2010 16:57:26,531 INFO  ~ Connected to jdbc:hsqldb:mem:playembed
+05 Okt 2010 16:57:27,313 INFO  ~ Application 'qa' is now started !
+05 Okt 2010 17:05:29,101 ERROR ~ 
+
+@643n3682b
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models/Question.java around line 35)
+The file /app/models/Question.java could not be compiled. Error raised is : Syntax error on token ";", , expected
+
+play.exceptions.JavaCompilationException: Syntax error on token ";", , expected
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 17:05:45,944 ERROR ~ 
+
+@643n3682c
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models/Question.java around line 35)
+The file /app/models/Question.java could not be compiled. Error raised is : Duplicate field Question.votes
+
+play.exceptions.JavaCompilationException: Duplicate field Question.votes
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 17:06:16,010 ERROR ~ 
+
+@643n3682d
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models/Question.java around line 8)
+The file /app/models/Question.java could not be compiled. Error raised is : StackOverflow.User cannot be resolved
+
+play.exceptions.JavaCompilationException: Only a type can be imported. StackOverflow.User resolves to a package
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 17:07:04,388 ERROR ~ 
+
+@643n3682e
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occured (Unable to build EntityManagerFactory): Could not determine type for: java.util.Map, at table: Question, for columns: [org.hibernate.mapping.Column(votes)]
+
+play.exceptions.JPAException: Unable to build EntityManagerFactory
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:183)
+	at play.Play.start(Play.java:381)
+	at play.Play.detectChanges(Play.java:492)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.Map, at table: Question, for columns: [org.hibernate.mapping.Column(votes)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:292)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:276)
+	at org.hibernate.mapping.Property.isValid(Property.java:207)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:458)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:215)
+	at org.hibernate.cfg.Configuration.validate(Configuration.java:1149)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1334)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:181)
+	... 4 more
+05 Okt 2010 17:12:35,415 ERROR ~ 
+
+@643n3682f
+Internal Server Error (500) for request GET /
+
+JPA error
+A JPA error occured (Unable to build EntityManagerFactory): Use of @OneToMany or @ManyToMany targeting an unmapped class: models.Answer.votes[models.Vote]
+
+play.exceptions.JPAException: Unable to build EntityManagerFactory
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:183)
+	at play.Play.start(Play.java:381)
+	at play.Play.detectChanges(Play.java:492)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: models.Answer.votes[models.Vote]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1071)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:602)
+	at org.hibernate.cfg.annotations.MapBinder$1.secondPass(MapBinder.java:79)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:66)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1177)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:329)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1162)
+	at org.hibernate.ejb.Ejb3Configuration.buildMappings(Ejb3Configuration.java:1226)
+	at org.hibernate.ejb.EventListenerConfigurator.configure(EventListenerConfigurator.java:173)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:854)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:667)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:181)
+	... 4 more
+05 Okt 2010 18:17:02,782 ERROR ~ 
+
+@643n3686p
+Internal Server Error (500) for request GET /admin/index
+
+Template execution error (In /app/views/Admin/index.html around line 3)
+Execution error occured in template /app/views/Admin/index.html. Exception raised was NullPointerException : Cannot invoke method size() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method size() on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:22)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at /app/views/Admin/index.html.(line:3)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 18:18:28,020 ERROR ~ 
+
+@643n36870
+Internal Server Error (500) for request GET /admin/index
+
+Compilation error (In /app/controllers/Admin.java around line 22)
+The file /app/controllers/Admin.java could not be compiled. Error raised is : Post cannot be resolved to a type
+
+play.exceptions.JavaCompilationException: Post cannot be resolved to a type
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:19:04,651 ERROR ~ 
+
+@643n36871
+Internal Server Error (500) for request GET /admin/index
+
+Template execution error (In /app/views/Admin/index.html around line 3)
+Execution error occured in template /app/views/Admin/index.html. Exception raised was NullPointerException : Cannot invoke method size() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method size() on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method size() on null object
+	at /app/views/Admin/index.html.(line:3)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 18:31:27,622 ERROR ~ 
+
+@643n3688c
+Internal Server Error (500) for request GET /admin/index
+
+Compilation error (In /app/controllers/Admin.java around line 37)
+The file /app/controllers/Admin.java could not be compiled. Error raised is : question.tags cannot be resolved or is not a field
+
+play.exceptions.JavaCompilationException: question.tags cannot be resolved or is not a field
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:240)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:551)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:409)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:271)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:253)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:250)
+	at play.Play.detectChanges(Play.java:476)
+	at play.Invoker$Invocation.init(Invoker.java:98)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:47:44,730 ERROR ~ 
+
+@643n368b2
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:13,437 ERROR ~ 
+
+@643n368b4
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:14,209 ERROR ~ 
+
+@643n368b6
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:14,395 ERROR ~ 
+
+@643n368b8
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:14,570 ERROR ~ 
+
+@643n368ba
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:14,709 ERROR ~ 
+
+@643n368bc
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:14,886 ERROR ~ 
+
+@643n368be
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:15,054 ERROR ~ 
+
+@643n368bg
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:15,210 ERROR ~ 
+
+@643n368bi
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:15,369 ERROR ~ 
+
+@643n368bk
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:15,967 ERROR ~ 
+
+@643n368bm
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:16,169 ERROR ~ 
+
+@643n368bo
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:16,880 ERROR ~ 
+
+@643n368c0
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:17,338 ERROR ~ 
+
+@643n368c2
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:17,989 ERROR ~ 
+
+@643n368c4
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action Admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 18:49:23,473 ERROR ~ 
+
+@643n368c6
+Internal Server Error (500) for request GET /admin/index
+
+No route found (In /app/views/Admin/index.html around line 7)
+No route able to invoke action admin.form was found.
+
+play.exceptions.NoRouteFoundException: No route found
+	at play.templates.Template.throwException(Template.java:292)
+	at play.templates.Template.render(Template.java:246)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Admin.index(Admin.java:23)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+05 Okt 2010 19:05:56,433 ERROR ~ 
+
+@643n368fm
+Internal Server Error (500) for request GET /posts/21
+
+Template execution error (In /app/views/Application/show.html around line 2)
+Execution error occured in template /app/views/Application/show.html. Exception raised was NullPointerException : Cannot get property 'title' on null object.
+
+play.exceptions.TemplateExecutionException: Cannot get property 'title' on null object
+	at play.templates.Template.throwException(Template.java:296)
+	at play.templates.Template.render(Template.java:261)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:22)
+	at play.mvc.Controller.renderTemplate(Controller.java:489)
+	at play.mvc.Controller.render(Controller.java:521)
+	at controllers.Application.show(Application.java:29)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot get property 'title' on null object
+	at /app/views/Application/show.html.(line:2)
+	at play.templates.Template.render(Template.java:238)
+	... 7 more
+05 Okt 2010 19:06:50,837 ERROR ~ 
+
+@643n368fo
+Internal Server Error (500) for request POST /application/questionanswer?questionId=27
+
+Java exception (In /app/controllers/Application.java around line 37)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.questionAnswer(Application.java:37)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more
+05 Okt 2010 19:07:01,232 ERROR ~ 
+
+@643n368fp
+Internal Server Error (500) for request POST /application/questionanswer?questionId=27
+
+Java exception (In /app/controllers/Application.java around line 37)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:230)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at controllers.Application.questionAnswer(Application.java:37)
+	at play.utils.Java.invokeStatic(Java.java:129)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:139)
+	... 1 more

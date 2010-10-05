@@ -1,7 +1,7 @@
 /** Main layout **/
 
 html, body {
-    background: #364B66 !important;
+    background: #000000 !important;
     font-family: Helvetica, Arial, Sans !important;
 }
 
@@ -22,7 +22,7 @@ body {
     display: block;
     height: 49px;
     margin-left: 20px;
-    color: #fff;
+    color: #ff0000;
     font-size: 48px;
     font-weight: bold;
     letter-spacing: -4px;
@@ -30,7 +30,7 @@ body {
 }
 
 #logo span {
-    color: #f00;
+    color: #000;
     font-size: 70%;
 }
 
@@ -45,15 +45,15 @@ body {
 }
 
 #tools a {
-    color: #fff;
+    color: #ff0000;
     text-decoration: none;
 }
 
 #title {
-    background: #B8C569;
+    background: #ff9900;
     padding: 20px 30px 30px 20px;
     margin: 20px 0;
-    color: #3C4313;
+    color: #000000;
     position: relative;
     -webkit-border-radius: 16px;
     -webkit-box-shadow: 0 2px 0 #93A045;
@@ -94,7 +94,7 @@ body {
 /** Main content **/
 
 #main {
-    background: #314660;
+    background: #ffcc66;
     background: -webkit-gradient(linear, left top, left 30%, from(#314660), to(#364B66));
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -109,12 +109,12 @@ body {
 
 .question .question-title a {
     font-size: 36px;
-    color: #F5C2CC;
+    color: #000000;
     text-decoration: none;
 }
 
 .question .question-metadata {
-    color: #BAC36E;
+    color: #000000;
     display: block;
     font-size: 70%;
     display: inline-block;
@@ -126,12 +126,12 @@ body {
 }
 
 .question .question-metadata a {
-    color: #9FA85D;
+    color: #000000;
 }
 
 .question .question-content {
     position: relative;
-    background: #fff;
+    background: #ff9900;
     padding: 10px;
     margin: 10px 0 50px 0;
     -webkit-border-radius: 10px;
@@ -157,7 +157,7 @@ body {
 /** Older questions **/
 
 .older-questions h3 {
-    color: #869AB1;
+    color: #330099;
     font-size: 28px;
     margin-bottom: 15px;
 }
@@ -175,18 +175,18 @@ body {
 
 .older-questions .question-title a {
     padding: 0;
-    color: #131921;
+    color: #000000;
     font-size: 20px;
 }
 
 .older-questions .question-metadata {
-    color: #869AB1;
+    color: #000000;
     padding: 0;
     font-size: 12px;
 }
 
 .older-questions .question-metadata a {
-    color: #869AB1;
+    color: #000000;
 }
 
 /** Answers **/
@@ -196,7 +196,7 @@ body {
 }
 
 h3 {
-    color: #869AB1;
+    color: #000000;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -212,7 +212,7 @@ h3 span {
 }
 
 .answer .answer-metadata {
-    color: #869AB1;
+    color: #000000;
     display: block;
     font-size: 50%;
     display: block;
@@ -229,8 +229,8 @@ h3 span {
 
 .answer .answer-content {
     position: relative;
-    background: #E4EAFF;
-    color: #242C58;
+    background: #ff9900;
+    color: #000000;
     font-size: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -258,7 +258,7 @@ h3 span {
 
 form {
     padding: 10px;
-    background: #253142;
+    background: #ff9900;
     background: -webkit-gradient(linear, left top, left 60%, from(#253142), to(#364B66));
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -291,7 +291,7 @@ form label {
     display: block;
     font-weight: bold;
     font-size: 90%;
-    color: #aaa;
+    color: #000000;
     margin-bottom: 3px;
 }
 
@@ -380,29 +380,29 @@ form label {
 }
 
 #adminMenu li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 80%;
-    background: #591C64;
+    background: #ff9900;
     padding: 2px 10px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
 }
 
 #adminMenu li.selected a {
-    background: #82A346;
+    background: #ff3300;
 }
 
 #crudContent {
-    color: #8B98AD;
+    color: #000000;
 }
 
 #crudContent h2 {
-    color: #EDC3CD !important;
+    color: #000000 !important;
 }
 
 #crudContent thead tr {
-    background: #512162 !important;
+    background: #000000 !important;
 }
 
 #crudContent table {
@@ -414,7 +414,7 @@ form label {
 }
 
 tr.odd {
-    background: #BECCE7 !important;
+    background: #ff9900 !important;
 }
 
 #crud #crudContent, #crudContent form, #crudListSearch, #crudListPagination, .crudButtons {
@@ -478,7 +478,7 @@ tr.odd {
 /** Login **/
 
 #login form {
-    background: #8B98AD !important;
+    background: #ff9900 !important;
     border: 0 !important;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -504,7 +504,7 @@ tr.odd {
 }
 
 #admin .question.odd {
-    background: #C0CBE5;
+    background: #ff9900;
 }
 
 #admin .question a {
@@ -517,7 +517,7 @@ tr.odd {
 }
 
 #newQuestion a {
-    background: #C88116;
+    background: #ff3300;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     padding: 5px 10px;
@@ -529,7 +529,7 @@ tr.odd {
 }
 
 #newQuestion a span {
-    background: #7D510E;
+    background: #000000;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     padding: 0 5px 2px 5px;

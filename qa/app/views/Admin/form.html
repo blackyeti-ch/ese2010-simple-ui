@@ -1,0 +1,38 @@
+#{extends 'admin.html' /}
+ 
+#{ifnot question?.id}
+    <h3>Write, <span>a new question</span></h3>
+#{/ifnot}
+#{else}
+    <h3>Edit, <span>this question</span></h3>
+#{/else}
+ 
+#{form @save(question?.id)}
+ 
+    #{ifErrors}
+        <p class="error">
+            Please correct these errors.
+        </p>
+    #{/ifErrors}
+     
+    <p>
+        #{field 'title'}
+        <label>Question title:</label>
+        <input type="text" name="${field.name}" 
+            value="${question?.title}" class="${field.errorClass}" />
+        #{/field}
+    </p>
+ 
+    <p>
+        #{field 'content'}
+        <label>Write here:</label>
+        <textarea name="${field.name}" 
+            class="${field.errorClass}">${question?.content}</textarea>
+        #{/field}
+    </p>
+    
+    <p>
+        <input type="submit" value="Publish this question to the blog" />
+    </p>
+    
+#{/form}

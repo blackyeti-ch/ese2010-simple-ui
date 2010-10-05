@@ -35,7 +35,7 @@ public class Application extends Controller {
             render("Application/show.html", question);
         }
         question.addAnswer(author, content);
-        flash.success("Thanks for questioning %s", author);
+        flash.success("Thanks for asking %s", author);
         show(questionId);
     }
  

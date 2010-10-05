@@ -1,8 +1,42 @@
 *{ You can use plain selenium command using the selenium tag }*
 
-#{selenium}
-    // Open the home page, and check that no error occured
+#{fixture delete:'all', load:'data.yml' /}
+ 
+#{selenium 'Check home page'}
+    clearSession()
+ 
+    // Open the home page
     open('/')
-    waitForPageToLoad(1000)
-    assertNotTitle('Application error')
+ 
+    // Check that the front post is present
+    assertTextPresent('About the model layer')
+    assertTextPresent('by Bob, 14 Jun 09')
+    assertTextPresent('1 answer , latest by Guest')
+ 
+    // Check older posts
+    assertTextPresent('The MVC application')
 #{/selenium}
+
+#{selenium 'Test comments'}
+ 
+    // Click on 'The MVC application post'
+    clickAndWait('link=The MVC application')
+    assertTextPresent('The MVC application')
+    assertTextPresent('no answers')
+    
+    // Post a new comment
+    type('content', 'Hello')
+    clickAndWait('css=input[type=submit]')
+    
+    // Should get an error
+    assertTextPresent('no answers')
+    assertTextPresent('Please enter name and message!')
+    type('author', 'Me')
+    clickAndWait('css=input[type=submit]')
+    
+    // Check
+    assertTextPresent('Thanks for asking Me')
+    assertTextPresent('1 answer')
+    assertTextPresent('Hello')
+#{/selenium}
+

@@ -1,3 +1,14 @@
 #{extends 'admin.html' /}
  
-Welcome ${user}!
+<h3>Welcome ${user}, <span>you have written ${questions.size() ?: 'no'} ${questions.pluralize('question', 'questions')} so far</span></h3>
+ 
+#{list items:questions, as:'question'}
+    <p class="question ${question_parity}">
+        <a href="#">${question.title}</a>
+    </p>
+#{/list}
+ 
+<p id="newQuestion" >
+    <a href="@{form()}"><span>+</span> write a new question</a>
+</p>
+

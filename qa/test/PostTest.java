@@ -117,11 +117,11 @@ public class PostTest extends UnitTest {
 	    assertEquals("About the model layer", frontQuestion.title);
 	 
 	    // Check that this question has two answers
-	    assertEquals(2, frontQuestion.answers.size());
+	    assertEquals(1, frontQuestion.answers.size());
 	 
 	    // Question a new answer
 	    frontQuestion.addAnswer("Jim", "I don't think so");
-	    assertEquals(3, frontQuestion.answers.size());
+	    assertEquals(2, frontQuestion.answers.size());
 	    assertEquals(4, Answer.count());
 	}
     

@@ -1,7 +1,10 @@
 1. Explain how a typical HTTP request is processed with the framework (the request lifecycle)
-// todo
+   - A HTTP request is received by it's responsible controller. The controller is looking for a 
+     specific route for the request and decides which view will be shown. The application code 
+     will then be executed. A template file will be rendered when handling a complex view.
 
 
 
 2. How could you test user interfaces with the testing facilities in play! framework?
-// todo
+   - In the play! framework you can write so called selenium tests. Selenium is a suite of tools 
+     specifically for testing web applications. It will test your application right in the web-browser.

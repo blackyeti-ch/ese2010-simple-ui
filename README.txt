@@ -1,4 +1,4 @@
-Already existing users on Play test qa:
+Already existing users on qa:
 
 Admin:
 	login: bob@gmail.com

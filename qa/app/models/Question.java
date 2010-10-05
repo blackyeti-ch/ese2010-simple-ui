@@ -1,6 +1,8 @@
 package models;
  
 import java.util.*;
+import java.util.Map.Entry;
+
 import javax.persistence.*;
  
 import play.db.jpa.*;
@@ -26,6 +28,9 @@ public class Question extends Model {
     
     @OneToMany(mappedBy="question", cascade=CascadeType.ALL)
     public List<Answer> answers;
+    
+//  @ManyToMany
+//	private Map<User,Vote> votes;
 
     
     public Question(User author, String title, String content) { 
@@ -54,5 +59,20 @@ public class Question extends Model {
     public String toString() {
         return title + " (" + postedAt + ")";
     }
-
+/*    
+    public void vote (Vote vote, User user) {
+    	votes.put(user,vote);
+    	this.save();
+    	}
+    
+	public int getRating() {
+		int rating = 0;
+		if (votes != null){
+			for (Entry<User, Vote> entry : votes.entrySet()){
+				rating = (entry.getValue() == Vote.UP) ? rating + 1 : rating - 1;
+			}
+		}
+		return rating;
+	}
+*/
 }
