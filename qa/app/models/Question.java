@@ -4,18 +4,29 @@ import java.util.*;
 import javax.persistence.*;
  
 import play.db.jpa.*;
+import play.data.validation.*;
  
 @Entity
 public class Question extends Model {
  
+    @Required
     public String title;
+    
+    @Required
     public Date postedAt;
     
     @Lob
+    @Required
+    @MaxSize(10000)
     public String content;
     
+    @Required
     @ManyToOne
     public User author;
+    
+    @OneToMany(mappedBy="question", cascade=CascadeType.ALL)
+    public List<Answer> answers;
+
     
     public Question(User author, String title, String content) { 
         this.answers = new ArrayList<Answer>();
@@ -24,9 +35,6 @@ public class Question extends Model {
         this.content = content;
         this.postedAt = new Date();
     }
- 
-    @OneToMany(mappedBy="question", cascade=CascadeType.ALL)
-    public List<Answer> answers;
 
     public Question addAnswer(String author, String content) {
         Answer newAnswer = new Answer(this, author, content).save();
@@ -41,6 +49,10 @@ public class Question extends Model {
      
     public Question next() {
         return Question.find("postedAt > ? order by postedAt asc", postedAt).first();
+    }
+    
+    public String toString() {
+        return title + " (" + postedAt + ")";
     }
 
 }

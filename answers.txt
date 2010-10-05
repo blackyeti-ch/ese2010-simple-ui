@@ -1,6 +1,7 @@
 1. Explain how a typical HTTP request is processed with the framework (the request lifecycle)
-
+// todo
 
 
 
 2. How could you test user interfaces with the testing facilities in play! framework?
+// todo

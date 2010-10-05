@@ -16,7 +16,7 @@ Question(firstBobQuestion):
     postedAt:       2009-06-14
     author:         bob
     content:        >
-                    Has the model has a central position in a Play! application?
+                    Has the model a central position in a Play! application?
 
 Question(secondBobQuestion):
     title:          Just a test
@@ -45,14 +45,14 @@ Answer(a1):
 Answer(a2):
     author:         Mike
     content:        >
-                    I know it :P
+                    This question is nonsense!
     postedAt:       2009-06-15
-    question:       firstBobQuestion    
+    question:       secondBobQuestion    
     
 Answer(a3):
     author:         Tom
     content:        >
-                    This question is nonsense!
+                    It's not even a question...
     postedAt:       2009-04-05
     question:       secondBobQuestion    
                  
