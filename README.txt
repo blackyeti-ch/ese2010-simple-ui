@@ -1,4 +1,4 @@
-Already existing users on qa:
+Already existing users on qa from initial-data:
 
 Admin:
 	login: bob@gmail.com
@@ -7,3 +7,5 @@ Admin:
 User:
 	login: jeff@gmail.com
 	pw: secret
+
+Create new users as admin.
